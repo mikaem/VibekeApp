@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+int count_year;
+int count_month;
+
 @interface ViewController : UIViewController
+- (IBAction)Har_trent:(id)sender;
+@property (weak, nonatomic) IBOutlet UILabel *siste_aar;
+@property (weak, nonatomic) IBOutlet UILabel *siste_maaned;
 
 @end

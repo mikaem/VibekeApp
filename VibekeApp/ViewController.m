@@ -26,4 +26,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)Har_trent:(id)sender {
+    count_month++;
+    count_year++;
+    _siste_aar.text = [NSString stringWithFormat:@"%i", count_year];
+    _siste_maaned.text = [NSString stringWithFormat:@"%i", count_month];
+    
+}
 @end
