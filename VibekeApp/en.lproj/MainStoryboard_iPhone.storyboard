@@ -69,7 +69,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.058323267875313944" blue="0.93227637350004677" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.17977598240000001" green="1" blue="0.034744735339999999" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="LEZ-Di-rEE" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="72" id="4yE-Ek-eOQ"/>
@@ -94,6 +94,8 @@
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="progress_aar" destination="Xo1-l9-GlQ" id="PTO-hZ-JNU"/>
+                        <outlet property="progress_maaned" destination="iYQ-cu-es3" id="pWT-8l-lXj"/>
                         <outlet property="siste_aar" destination="LEZ-Di-rEE" id="q1K-gB-N8l"/>
                         <outlet property="siste_maaned" destination="2XU-Je-ywI" id="bd6-Bv-7Rn"/>
                     </connections>
@@ -111,6 +113,8 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
             <relationships>
                 <relationship kind="action" name="Har_trent:"/>
+                <relationship kind="outlet" name="progress_aar" candidateClass="UIProgressView"/>
+                <relationship kind="outlet" name="progress_maaned" candidateClass="UIProgressView"/>
                 <relationship kind="outlet" name="siste_aar" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="siste_maaned" candidateClass="UILabel"/>
             </relationships>

@@ -15,5 +15,7 @@ int count_month;
 - (IBAction)Har_trent:(id)sender;
 @property (weak, nonatomic) IBOutlet UILabel *siste_aar;
 @property (weak, nonatomic) IBOutlet UILabel *siste_maaned;
+@property (weak, nonatomic) IBOutlet UIProgressView *progress_aar;
+@property (weak, nonatomic) IBOutlet UIProgressView *progress_maaned;
 
 @end
