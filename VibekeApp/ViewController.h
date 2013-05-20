@@ -10,6 +10,7 @@
 
 int count_year;
 int count_month;
+float setprogress;
 
 @interface ViewController : UIViewController
 - (IBAction)Har_trent:(id)sender;
