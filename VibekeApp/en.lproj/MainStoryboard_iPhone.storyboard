@@ -52,9 +52,6 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2XU-Je-ywI">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="40" id="ZYN-MN-tKk"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -62,7 +59,7 @@
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LEZ-Di-rEE">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="EhO-XL-qyC"/>
-                                    <constraint firstAttribute="width" constant="25" id="c4r-TR-hhD"/>
+                                    <constraint firstAttribute="width" constant="52" id="N5V-9c-lMa"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -73,6 +70,7 @@
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="LEZ-Di-rEE" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="72" id="4yE-Ek-eOQ"/>
+                            <constraint firstItem="LEZ-Di-rEE" firstAttribute="trailing" secondItem="2XU-Je-ywI" secondAttribute="trailing" type="default" id="5SY-SV-q2J"/>
                             <constraint firstItem="auw-1v-TuP" firstAttribute="top" secondItem="3" secondAttribute="top" constant="163" id="6uV-VV-aFx"/>
                             <constraint firstItem="LEZ-Di-rEE" firstAttribute="top" secondItem="3" secondAttribute="top" constant="202" id="9Gc-KU-HCa"/>
                             <constraint firstItem="dhJ-8V-dXs" firstAttribute="centerX" secondItem="YrD-Cp-EzJ" secondAttribute="centerX" type="default" id="IaP-WW-hM1"/>

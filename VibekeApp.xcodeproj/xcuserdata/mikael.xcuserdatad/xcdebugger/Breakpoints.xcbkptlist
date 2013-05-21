@@ -8,11 +8,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "VibekeApp/ViewController.h"
-         timestampString = "390758022.334174"
+         timestampString = "390863264.940411"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "22"
-         endingLineNumber = "22"
+         startingLineNumber = "24"
+         endingLineNumber = "24"
          landmarkName = "@interface ViewController"
          landmarkType = "2">
       </FileBreakpoint>

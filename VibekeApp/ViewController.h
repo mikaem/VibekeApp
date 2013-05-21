@@ -11,6 +11,7 @@
 int count_year;
 int count_month;
 float setprogress;
+int count_training_list[365] = {0};
 
 @interface ViewController : UIViewController
 - (IBAction)Har_trent:(id)sender;
@@ -18,5 +19,6 @@ float setprogress;
 @property (weak, nonatomic) IBOutlet UILabel *siste_maaned;
 @property (weak, nonatomic) IBOutlet UIProgressView *progress_aar;
 @property (weak, nonatomic) IBOutlet UIProgressView *progress_maaned;
+
 
 @end
