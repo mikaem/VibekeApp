@@ -31,34 +31,31 @@
 - (IBAction)Har_trent:(id)sender {
     NSDate *date = [NSDate date];
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    [formatter setDateFormat:@"dd-MM-yyyy"];
-    NSDate *refdate = [formatter dateFromString:@"01-01-2013"];
+    [formatter setDateFormat:@"yyyy-MM-dd"];
+    NSDate *refdate = [formatter dateFromString:@"2013-01-01"];
     unsigned flags = NSDayCalendarUnit;
     NSDateComponents *difference = [[NSCalendar currentCalendar]
                                     components:flags
                                     fromDate:refdate toDate:date options:0];
     
     // This just logs your output
-    //NSLog(@"Start Date, %@", refdate);
-    //NSLog(@"End Date, %@", date);
+    NSLog(@"Start Date, %@", refdate);
+    NSLog(@"End Date, %@", date);
     NSInteger day = [difference day];
-    day = day % 365;
     NSLog(@"day, %ld", (long)day);
-    
+    day = day % 365;
     count_training_list[day] += 1;
     
-    //for(uint i=day; i>day-100; i--)
-    //    count_training_list[i]=1;
-    
+    // Count number of excercises last 30 days
     count_month = 0;
     count_year = 0;
-    // Count number of excercises last 30 days
     for(int i=day; i>(day-30); i--)
     {
         int k = i;
         if (i < 0) k = 365 + i;
         count_month += count_training_list[k];
     }
+    
     // Count number of exercises last 365 days
     for(int i=day; i>(day-365); i--)
     {
